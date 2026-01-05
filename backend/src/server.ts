@@ -42,6 +42,7 @@ app.get(`/api/${API_VERSION}/`, (_req: Request, res: Response) => {
     version: API_VERSION,
     endpoints: {
       health: '/health',
+      whatsapp_webhook: `/api/${API_VERSION}/whatsapp/webhook`,
       stories: `/api/${API_VERSION}/stories`,
       sources: `/api/${API_VERSION}/sources`,
       trending: `/api/${API_VERSION}/stories/trending`,
@@ -50,13 +51,17 @@ app.get(`/api/${API_VERSION}/`, (_req: Request, res: Response) => {
   });
 });
 
-// TODO: Import routes
+// Import routes
+import whatsappRouter from './routes/whatsapp';
+
+// Register routes
+app.use(`/api/${API_VERSION}/whatsapp`, whatsappRouter);
+
+// TODO: Add more routes
 // import storiesRouter from './routes/stories';
 // import sourcesRouter from './routes/sources';
-// import whatsappRouter from './routes/whatsapp';
 // app.use(`/api/${API_VERSION}/stories`, storiesRouter);
 // app.use(`/api/${API_VERSION}/sources`, sourcesRouter);
-// app.use(`/api/${API_VERSION}/whatsapp`, whatsappRouter);
 
 // 404 handler
 app.use((req: Request, res: Response) => {
