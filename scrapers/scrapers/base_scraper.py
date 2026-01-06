@@ -156,7 +156,7 @@ class BaseScraper(ABC):
         with open(filepath, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
 
-        logger.info(f"✓ Saved {len(self.articles)} articles to {filepath}")
+        logger.info(f"[OK] Saved {len(self.articles)} articles to {filepath}")
         return filepath
 
     def run(self) -> List[Article]:
@@ -170,7 +170,7 @@ class BaseScraper(ABC):
             # Scrape homepage
             self.articles = self.scrape_homepage()
 
-            logger.info(f"✓ Scraped {len(self.articles)} articles from {self.source_name}")
+            logger.info(f"[OK] Scraped {len(self.articles)} articles from {self.source_name}")
 
             # Save to JSON
             if self.articles:

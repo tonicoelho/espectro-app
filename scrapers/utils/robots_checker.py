@@ -51,7 +51,7 @@ class RobotsChecker:
                 parser = RobotFileParser()
                 parser.parse(response.text.splitlines())
                 self.cache[domain] = parser
-                logger.info(f"✓ Successfully parsed robots.txt for {domain}")
+                logger.info(f"[OK] Successfully parsed robots.txt for {domain}")
                 return parser
             else:
                 logger.warning(f"No robots.txt found at {robots_url} (Status: {response.status_code})")

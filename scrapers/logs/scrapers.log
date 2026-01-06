@@ -1,0 +1,31 @@
+2026-01-06 10:25:12 - root - INFO - Data-Lite Mode: ON
+2026-01-06 10:25:12 - root - INFO - 
+2026-01-06 10:25:12 - root - INFO - 
+============================================================
+2026-01-06 10:25:12 - root - INFO - Running: G1
+2026-01-06 10:25:12 - root - INFO - ============================================================
+2026-01-06 10:25:12 - scrapers.base_scraper - INFO - Starting scraper for G1
+2026-01-06 10:25:12 - scrapers.base_scraper - INFO - Data-Lite Mode: ON
+2026-01-06 10:25:12 - utils.robots_checker - INFO - Fetching robots.txt from https://g1.globo.com/robots.txt
+2026-01-06 10:25:13 - scrapers.g1_scraper - INFO - Found 9 article candidates on G1 homepage
+2026-01-06 10:25:13 - root - INFO - 
+============================================================
+2026-01-06 10:25:13 - root - INFO - Running: Folha de S.Paulo
+2026-01-06 10:25:13 - root - INFO - ============================================================
+2026-01-06 10:25:13 - scrapers.base_scraper - INFO - Starting scraper for Folha de S.Paulo
+2026-01-06 10:25:13 - scrapers.base_scraper - INFO - Data-Lite Mode: ON
+2026-01-06 10:25:13 - utils.robots_checker - INFO - Fetching robots.txt from https://www.folha.uol.com.br/robots.txt
+2026-01-06 10:25:15 - scrapers.folha_scraper - INFO - Found 20 article candidates on Folha homepage
+2026-01-06 10:25:15 - root - INFO - 
+============================================================
+2026-01-06 10:25:15 - root - INFO - Running: O Estado de S. Paulo
+2026-01-06 10:25:15 - root - INFO - ============================================================
+2026-01-06 10:25:15 - scrapers.base_scraper - INFO - Starting scraper for O Estado de S. Paulo
+2026-01-06 10:25:15 - scrapers.base_scraper - INFO - Data-Lite Mode: ON
+2026-01-06 10:25:15 - utils.robots_checker - INFO - Fetching robots.txt from https://www.estadao.com.br/robots.txt
+2026-01-06 10:25:16 - scrapers.estadao_scraper - INFO - Found 0 article candidates on Estadão homepage
+2026-01-06 10:25:16 - root - INFO - 
+============================================================
+2026-01-06 10:25:16 - root - INFO - SUMMARY: 29 total articles scraped
+2026-01-06 10:25:16 - root - INFO - ============================================================
+
